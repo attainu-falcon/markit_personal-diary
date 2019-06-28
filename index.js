@@ -102,7 +102,7 @@ app.post( "/upload", multerUploads, ( req, res ) => {
     if ( 1 ) {
         if ( req.file ) {
             const file = dataUri( req ).content;
-            return uploader.upload( file ).then( ( result ) => {
+            return uploader.upload( file, () => { }, { resource_type: "auto" } ).then( ( result ) => {
                 const image = result.url;
                 return res.status( 200 ).json( {
                     messge: "Your image has been uploded successfully to cloudinary",
