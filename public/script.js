@@ -281,10 +281,10 @@ function uploadFile() {
         
     }
          
-    $(".export--pdf").on('click', function () {
+    $(".export-pdf").on('click', function () {
         var divContents = $("#markdown").html();
         var printWindow = window.open('', '', 'height=400,width=800');
-        printWindow.document.write('<html><head><title>Notes</title>');
+        printWindow.document.write('<html><head><title> Notes</title>');
         printWindow.document.write('</head><body >');
         printWindow.document.write(divContents);
         printWindow.document.write('</body></html>');
