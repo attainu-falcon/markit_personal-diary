@@ -55,7 +55,7 @@
     "process-nextick-args": "^2.0.1",
     "promise": "^8.0.3",
     "q": "^1.5.1",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "random-bytes": "^1.0.0",
     "range-parser": "^1.2.1",
     "readable-stream": "^1.1.14",
